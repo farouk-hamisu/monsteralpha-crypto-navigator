@@ -1,0 +1,22 @@
+
+{
+  "name": "MonsterAlpha Crypto Position Calculator",
+  "short_name": "MonsterAlpha",
+  "description": "Advanced crypto trading position calculator with real-time price data and risk management tools",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#059669",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/lovable-uploads/b69fc652-9707-410d-91f0-870ac5aa8ff8.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "utilities", "productivity"],
+  "lang": "en",
+  "scope": "/"
+}
