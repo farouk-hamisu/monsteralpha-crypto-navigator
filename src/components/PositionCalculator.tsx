@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -177,13 +178,13 @@ const PositionCalculator = () => {
                   <SelectValue placeholder="Select trade type" />
                 </SelectTrigger>
                 <SelectContent className="bg-slate-800 border-slate-600">
-                  <SelectItem value="long" className="text-slate-100 focus:bg-emerald-600 text-sm sm:text-base">
+                  <SelectItem value="long" className="text-slate-100 focus:bg-emerald-600 focus:text-white data-[highlighted]:bg-emerald-600 data-[highlighted]:text-white text-sm sm:text-base">
                     <div className="flex items-center gap-2">
                       <TrendingUp className="w-4 h-4 text-green-500" />
                       Long
                     </div>
                   </SelectItem>
-                  <SelectItem value="short" className="text-slate-100 focus:bg-emerald-600 text-sm sm:text-base">
+                  <SelectItem value="short" className="text-slate-100 focus:bg-emerald-600 focus:text-white data-[highlighted]:bg-emerald-600 data-[highlighted]:text-white text-sm sm:text-base">
                     <div className="flex items-center gap-2">
                       <TrendingDown className="w-4 h-4 text-red-500" />
                       Short
