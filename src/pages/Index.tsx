@@ -4,6 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import PositionCalculator from '@/components/PositionCalculator';
 import CalculationHistory from '@/components/CalculationHistory';
 import TradingViewWidget from '@/components/TradingViewWidget';
+import PWAInstallBanner from '@/components/PWAInstallBanner';
 import { Calculator, History, Zap } from 'lucide-react';
 
 const Index = () => {
@@ -24,6 +25,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      {/* PWA Install Banner */}
+      <PWAInstallBanner />
+      
       <div className="container mx-auto px-3 sm:px-4 lg:px-6 py-4 sm:py-6">
         {/* Header with Logo */}
         <div className="text-center mb-6 sm:mb-8">

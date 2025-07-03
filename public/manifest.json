@@ -18,5 +18,10 @@
   ],
   "categories": ["finance", "utilities", "productivity"],
   "lang": "en",
-  "scope": "/"
+  "scope": "/",
+  "prefer_related_applications": false,
+  "display_override": ["window-controls-overlay", "standalone"],
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
 }
