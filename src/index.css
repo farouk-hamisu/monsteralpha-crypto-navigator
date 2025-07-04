@@ -40,11 +40,14 @@
     --neon-green: 16 185 129;
     --electric-blue: 59 130 246;
     --dark-bg: 15 23 42;
+    --premium-teal: 20 184 166; /* teal-500 */
+    --deep-navy: 30 41 59; /* slate-800 */
+    --steel-gray: 71 85 105; /* slate-600 */
   }
 
   body {
     @apply bg-slate-900 text-slate-50 font-sans;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
   }
 }
 
@@ -66,6 +69,32 @@
     background: rgba(51, 65, 85, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(16, 185, 129, 0.2);
+  }
+
+  /* Premium Glass Card with Professional Styling */
+  .premium-glass-card {
+    background: rgba(30, 41, 59, 0.15);
+    backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(71, 85, 105, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 
+                0 0 0 1px rgba(255, 255, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .premium-glass-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 
+                0 0 0 1px rgba(20, 184, 166, 0.2);
+  }
+
+  /* Premium Result Cards */
+  .premium-result-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .premium-result-card:hover {
+    transform: translateY(-1px) scale(1.02);
+    border-color: rgba(20, 184, 166, 0.4);
   }
 }
 
@@ -96,5 +125,50 @@
       opacity: 0.8;
       transform: scale(1.05);
     }
+  }
+
+  /* Smooth fade-in animation for form elements */
+  .animate-fade-in {
+    animation: fade-in 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Value transition animation */
+  .animate-value-change {
+    animation: value-pulse 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @keyframes value-pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+      color: rgb(20, 184, 166);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Professional focus states */
+  .focus-professional {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .focus-professional:focus {
+    outline: none;
+    border-color: rgb(20, 184, 166);
+    box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.15);
   }
 }
